@@ -1,6 +1,7 @@
 import streamlit as st
 
 from u1_t2 import page_u1_t2
+from u1_t3 import page_u1_t3
 from u1_t4 import page_u1_t4
 from u1_t5 import page_u1_t5    
 
@@ -12,10 +13,12 @@ def page_inicio():
     st.markdown('[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/marianabritoazevedo)')
     st.markdown('[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mariana-brito-azevedo/)')
 
-menu = ['Página inicial', 'Unidade 1 - Tópico 2', 'Unidade 1 - Tópico 4', 'Unidade 1 - Tópico 5']
+menu = ['Unidade 1 - Tópico 3', 'Página inicial', 'Unidade 1 - Tópico 2', 'Unidade 1 - Tópico 4', 'Unidade 1 - Tópico 5']
 menu_option = st.sidebar.selectbox('Menu', menu)
 
-if menu_option == 'Página inicial':
+if menu_option == 'Unidade 1 - Tópico 3':
+    page_u1_t3()
+elif menu_option == 'Página inicial':
     page_inicio()
 elif menu_option == 'Unidade 1 - Tópico 2':
     page_u1_t2()
