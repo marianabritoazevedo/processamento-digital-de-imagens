@@ -6,6 +6,7 @@ from u1_t4 import page_u1_t4
 from u1_t5 import page_u1_t5
 from u1_t6 import page_u1_t6  
 from u1_t7 import page_u1_t7
+from u1_t8 import page_u1_t8
 
 def page_inicio():
     st.title('Processamento Digital de Imagens')
@@ -15,7 +16,7 @@ def page_inicio():
     st.markdown('[![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)](https://github.com/marianabritoazevedo)')
     st.markdown('[![LinkedIn](https://img.shields.io/badge/linkedin-%230077B5.svg?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mariana-brito-azevedo/)')
 
-menu = ['Página inicial', 'Unidade 1 - Tópico 2', 'Unidade 1 - Tópico 3', 'Unidade 1 - Tópico 4', 'Unidade 1 - Tópico 5', 'Unidade 1 - Tópico 6', 'Unidade 1 - Tópico 7']
+menu = ['Página inicial', 'Unidade 1 - Tópico 2', 'Unidade 1 - Tópico 3', 'Unidade 1 - Tópico 4', 'Unidade 1 - Tópico 5', 'Unidade 1 - Tópico 6', 'Unidade 1 - Tópico 7', 'Unidade 1 - Tópico 8']
 menu_option = st.sidebar.selectbox('Menu', menu)
 
 if menu_option == 'Página inicial':
@@ -32,3 +33,5 @@ elif menu_option == 'Unidade 1 - Tópico 6':
     page_u1_t6()
 elif menu_option == 'Unidade 1 - Tópico 7':
     page_u1_t7()
+elif menu_option == 'Unidade 1 - Tópico 8':
+    page_u1_t8()
