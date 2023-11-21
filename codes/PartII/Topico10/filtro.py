@@ -46,5 +46,6 @@ else:
     # Visualização da imagem original e de seu espectro
     cv2.imshow("Imagem original", image)
     cv2.imshow('Imagem Filtrada', imagem_filtrada)
+    cv2.imwrite('imagem-com-filtro.png', imagem_filtrada)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
